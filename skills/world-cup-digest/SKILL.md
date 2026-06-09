@@ -1,6 +1,6 @@
 ---
 name: world-cup-digest
-version: "0.5.0"
+version: "0.5.1"
 description: Use when the user wants FIFA World Cup match summaries, daily recaps, weekly digests, group context, player/team performance takeaways, or "what happened today" tournament briefings. Runs a bundled research script to fetch match data from configured football providers, then guides the agent to verify and synthesize sourced recaps without inventing statistics.
 argument-hint: 'world-cup-digest Brazil vs Morocco | world-cup-digest today | world-cup-digest week'
 allowed-tools: Bash, Read, Write, WebSearch

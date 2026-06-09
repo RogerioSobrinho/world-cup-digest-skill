@@ -4,7 +4,7 @@ All notable changes to `world-cup-digest-skill` are documented here.
 
 This project uses semantic versioning where practical.
 
-## Unreleased
+## 0.5.1 - Catch-Up and Team Radar
 
 ### Added
 

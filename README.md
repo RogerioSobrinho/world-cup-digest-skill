@@ -148,8 +148,8 @@ See [CHANGELOG.md](CHANGELOG.md) for release history.
 Create a GitHub release by pushing a version tag:
 
 ```bash
-git tag v0.5.0
-git push origin v0.5.0
+git tag v0.5.1
+git push origin v0.5.1
 ```
 
 The release workflow runs tests, builds the `.skill` archive, smoke-tests it, and uploads `dist/world-cup-digest.skill`.
