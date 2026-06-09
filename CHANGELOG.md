@@ -4,6 +4,15 @@ All notable changes to `world-cup-digest-skill` are documented here.
 
 This project uses semantic versioning where practical.
 
+## Unreleased
+
+### Added
+
+- Catch-up briefing guidance for users who want to get current quickly.
+- Team radar guidance for any national team, not only Brazil.
+- Watch-priority format covering full replay, extended highlights, short highlights, and score-only matches.
+- Daily digest guidance for biggest outcomes, surprises, standouts, injuries/suspensions, controversies, and tournament impact.
+
 ## 0.5.0 - First Public Release
 
 ### Added

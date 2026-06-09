@@ -51,3 +51,57 @@ Use sparingly:
 - `Score only`: low-event or low-impact game.
 
 Explain the recommendation in one sentence.
+
+## Catch-Up Briefing
+
+Use when the user wants to get current quickly.
+
+```text
+Resumo em 30 segundos:
+Essential state of the day/week.
+
+O que realmente importa:
+- Result/story with impact.
+- Result/story with impact.
+- Result/story with impact.
+
+Nomes para guardar:
+- Player/team - why.
+
+Impacto na Copa:
+- Group/bracket implications.
+
+Radar:
+- Team-specific or tournament-wide note.
+
+O que vale assistir:
+- Full replay: Match - why.
+- Extended highlights: Match - why.
+- Score only: Match - why.
+```
+
+## Team Radar
+
+Use for any team the user names. Do not default to Brazil unless requested.
+
+```text
+Radar - Team
+
+Estado atual:
+- Latest result/status.
+
+O que mudou:
+- Group/bracket impact.
+
+Próximo jogo:
+- Opponent/date/stakes.
+
+Pontos de atenção:
+- Injuries/suspensions/form/tactical concern if verified.
+
+Rivais e cruzamentos:
+- Relevant paths or opponents.
+
+O que vale assistir:
+- Replay/highlights/score-only recommendation.
+```

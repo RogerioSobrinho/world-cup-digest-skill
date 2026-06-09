@@ -11,6 +11,9 @@ It helps an agent produce concise, sourced summaries for:
 - a matchday/day recap
 - a weekly tournament digest
 - group and knockout context
+- quick catch-up briefings
+- team radar for any national team
+- replay/highlight priority
 - "what should I watch later?" recommendations
 
 The skill includes a bundled fetcher script, similar in spirit to `last30days` using its own Python engine. The script gathers a research bundle from public sources and optional football data providers, then the agent verifies and synthesizes the final recap.
@@ -167,6 +170,14 @@ Use world-cup-digest: resumo da semana da Copa. Quero saber quem jogou bem e qua
 
 ```text
 Use world-cup-digest: me explica o Grupo G depois dos jogos de hoje.
+```
+
+```text
+Use world-cup-digest: nao vi nada da Copa hoje. Me coloca por dentro em 5 minutos.
+```
+
+```text
+Use world-cup-digest: radar de Marrocos depois da rodada de hoje.
 ```
 
 Historical test fixture:

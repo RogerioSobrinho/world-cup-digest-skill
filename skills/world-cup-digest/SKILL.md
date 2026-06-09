@@ -31,7 +31,7 @@ metadata:
 
 Use this skill to help a user stay current with the FIFA World Cup when they cannot watch every match.
 
-The output should answer: who won, how the match unfolded, who played well, what mattered tactically, and what it changes in the tournament.
+The output should answer: who won, how the match unfolded, who played well, what mattered tactically, what changed in the tournament, and what the user needs to know to stay current without watching every match.
 
 ## Mandatory Engine Step
 
@@ -148,8 +148,9 @@ Workflow:
 1. Resolve the user's date/timezone. If relative, use the user's locale when known.
 2. List all completed, live, and scheduled matches for that date.
 3. For completed matches, summarize each in 3-6 bullets.
-4. Rank "must watch highlights/replay" based on stakes, drama, upset, quality, and relevance.
-5. Update group/knockout implications.
+4. Identify the most important outcomes, biggest surprises, standout players, key injuries/suspensions, controversies, and table/bracket implications.
+5. Rank what is worth a full replay, extended highlights, short highlights, or score-only based on stakes, drama, upset, quality, and relevance.
+6. Include a radar section for any team the user names. If no team is named, include a general tournament radar.
 
 ### Weekly Digest
 
@@ -163,7 +164,38 @@ Workflow:
 1. Define the exact date range.
 2. Cluster matches by narrative: upsets, favorites confirming, tactical trends, injuries/suspensions, standout players.
 3. Highlight tournament implications: qualified teams, eliminated teams, group scenarios, bracket changes.
-4. Include a short watchlist: best games, best players, biggest stories.
+4. Include a short watchlist: full replays, highlights, score-only matches, best players, biggest stories.
+
+### Catch-Up Briefing
+
+Examples:
+
+- "Nao vi nada da Copa hoje, me coloca por dentro"
+- "Resumo dos jogos de hoje em 5 minutos"
+- "O que eu preciso saber da rodada?"
+
+Workflow:
+
+1. Start with the shortest useful overview: the day/week in one paragraph.
+2. Prioritize signal over equal coverage. Not every match deserves the same space.
+3. Include results that changed group/bracket context, best games, standout players, injuries/suspensions, controversies, and what is worth watching later.
+4. Avoid framing this as social conversation. Focus on what matters to know.
+
+### Team Radar
+
+Examples:
+
+- "Radar do Brasil"
+- "Radar da Argentina"
+- "O que importa para Marrocos nessa rodada?"
+- "Como os jogos de hoje impactam a Franca?"
+
+Workflow:
+
+1. Use the team named by the user. Do not assume Brazil unless the user asks for Brazil or context clearly implies it.
+2. Verify the team's latest match, next match, group/bracket status, injuries/suspensions, and likely implications.
+3. Include relevant rivals and possible bracket paths when useful.
+4. Keep it practical: what changed, what matters next, and what to watch.
 
 ### Group/Bracket Context
 
@@ -218,11 +250,19 @@ Short recommendation.
 ```text
 Resumo da Copa - DD/MM
 
+Panorama:
+Short synthesis of the day.
+
 Placar do dia:
 - Team A 2 x 1 Team B - one-line story.
 - Team C 0 x 0 Team D - one-line story.
 
-Jogos que importaram mais:
+Principais pontos:
+- Biggest result/upset.
+- Standout player/team.
+- Injury/suspension/controversy if relevant.
+
+Jogos que mais importaram:
 1. Match - why.
 2. Match - why.
 3. Match - why.
@@ -233,8 +273,13 @@ Melhores atuações:
 Tabela e contexto:
 - Group/bracket implications.
 
-O que assistir:
-- Full replay / highlights recommendation.
+Radar:
+- Team-specific or tournament-wide note.
+
+O que vale assistir:
+- Full replay: Match - why.
+- Extended highlights: Match - why.
+- Short highlights/score only: Match - why.
 ```
 
 ## Weekly Digest Output
@@ -259,8 +304,37 @@ Melhores jogadores/time:
 Quem subiu / quem preocupou:
 - Team/player notes.
 
+O que vale assistir:
+- Full replay / highlights / score-only recommendations.
+
 Agenda do que vem:
 - Next important matches.
+```
+
+## Catch-Up Output
+
+```text
+Resumo em 30 segundos:
+One paragraph with the essential state of the day/week.
+
+O que realmente importa:
+- Result/story with impact.
+- Result/story with impact.
+- Result/story with impact.
+
+Nomes para guardar:
+- Player/team - why.
+
+Impacto na Copa:
+- Group/bracket implications.
+
+Radar:
+- Team-specific or tournament-wide note.
+
+O que vale assistir:
+- Full replay: Match - why.
+- Extended highlights: Match - why.
+- Score only: Match - why.
 ```
 
 ## Source Strategy
