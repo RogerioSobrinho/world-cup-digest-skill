@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        run: PYTHONPATH=skills/world-cup-digest/scripts python -m unittest discover -s tests -v
+      - name: Build skill archive
+        run: bash skills/world-cup-digest/scripts/build-skill.sh
+      - name: Smoke test archive
+        run: |
+          tmp="$(mktemp -d)"
+          unzip -q dist/world-cup-digest.skill -d "$tmp/world-cup-digest"
+          python "$tmp/world-cup-digest/scripts/world-cup-fetch.py" --mock --emit compact
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/world-cup-digest.skill

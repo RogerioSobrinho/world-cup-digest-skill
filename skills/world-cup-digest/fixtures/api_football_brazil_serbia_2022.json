@@ -1,0 +1,121 @@
+{
+  "get": "fixtures",
+  "parameters": {
+    "league": "1",
+    "season": "2022",
+    "date": "2022-11-24"
+  },
+  "errors": [],
+  "results": 1,
+  "response": [
+    {
+      "fixture": {
+        "id": 855748,
+        "date": "2022-11-24T19:00:00+00:00",
+        "status": {
+          "long": "Match Finished",
+          "short": "FT"
+        },
+        "venue": {
+          "name": "Lusail Stadium",
+          "city": "Lusail"
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "FIFA World Cup",
+        "round": "Group G - 1"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil"
+        },
+        "away": {
+          "id": 14,
+          "name": "Serbia"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 62
+          },
+          "team": {
+            "name": "Brazil"
+          },
+          "player": {
+            "name": "Richarlison"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal"
+        },
+        {
+          "time": {
+            "elapsed": 73
+          },
+          "team": {
+            "name": "Brazil"
+          },
+          "player": {
+            "name": "Richarlison"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal"
+        }
+      ],
+      "statistics": [
+        {
+          "team": {
+            "name": "Brazil"
+          },
+          "statistics": [
+            {
+              "type": "Ball Possession",
+              "value": "59%"
+            },
+            {
+              "type": "Total Shots",
+              "value": 22
+            },
+            {
+              "type": "Shots on Goal",
+              "value": 8
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "team": {
+            "name": "Serbia"
+          },
+          "statistics": [
+            {
+              "type": "Ball Possession",
+              "value": "41%"
+            },
+            {
+              "type": "Total Shots",
+              "value": 5
+            },
+            {
+              "type": "Shots on Goal",
+              "value": 0
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

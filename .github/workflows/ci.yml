@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        run: PYTHONPATH=skills/world-cup-digest/scripts python -m unittest discover -s tests -v
+      - name: Build skill archive
+        run: bash skills/world-cup-digest/scripts/build-skill.sh
+      - name: Inspect archive
+        run: unzip -l dist/world-cup-digest.skill
+      - name: Smoke test archive
+        run: |
+          tmp="$(mktemp -d)"
+          unzip -q dist/world-cup-digest.skill -d "$tmp/world-cup-digest"
+          python "$tmp/world-cup-digest/scripts/world-cup-fetch.py" --mock --emit compact

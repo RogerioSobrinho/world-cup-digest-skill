@@ -1,0 +1,3 @@
+display_name: World Cup Digest
+short_description: Summarize World Cup matches, matchdays, and tournament context.
+default_prompt: "Use world-cup-digest: summarize today's World Cup matches with score, standout players, tournament implications, and what is worth watching."

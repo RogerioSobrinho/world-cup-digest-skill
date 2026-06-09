@@ -1,0 +1,134 @@
+{
+  "get": "fixtures",
+  "parameters": {
+    "league": "1",
+    "season": "2026",
+    "date": "2026-06-11"
+  },
+  "errors": [],
+  "results": 1,
+  "response": [
+    {
+      "fixture": {
+        "id": 1001,
+        "date": "2026-06-11T19:00:00+00:00",
+        "status": {
+          "long": "Match Finished",
+          "short": "FT"
+        },
+        "venue": {
+          "name": "Estadio Azteca",
+          "city": "Mexico City"
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "FIFA World Cup",
+        "round": "Group A - 1"
+      },
+      "teams": {
+        "home": {
+          "id": 11,
+          "name": "Mexico"
+        },
+        "away": {
+          "id": 22,
+          "name": "Brazil"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 2
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 12
+          },
+          "team": {
+            "name": "Brazil"
+          },
+          "player": {
+            "name": "Forward One"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal"
+        },
+        {
+          "time": {
+            "elapsed": 58
+          },
+          "team": {
+            "name": "Mexico"
+          },
+          "player": {
+            "name": "Midfielder Two"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal"
+        },
+        {
+          "time": {
+            "elapsed": 89
+          },
+          "team": {
+            "name": "Brazil"
+          },
+          "player": {
+            "name": "Forward Three"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal"
+        }
+      ],
+      "statistics": [
+        {
+          "team": {
+            "name": "Mexico"
+          },
+          "statistics": [
+            {
+              "type": "Ball Possession",
+              "value": "47%"
+            },
+            {
+              "type": "Total Shots",
+              "value": 9
+            },
+            {
+              "type": "Shots on Goal",
+              "value": 3
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "team": {
+            "name": "Brazil"
+          },
+          "statistics": [
+            {
+              "type": "Ball Possession",
+              "value": "53%"
+            },
+            {
+              "type": "Total Shots",
+              "value": 14
+            },
+            {
+              "type": "Shots on Goal",
+              "value": 6
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
