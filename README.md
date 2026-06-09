@@ -1,7 +1,7 @@
 # World Cup Digest Skill
 
 [![CI](https://github.com/RogerioSobrinho/world-cup-digest-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/RogerioSobrinho/world-cup-digest-skill/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/RogerioSobrinho/world-cup-digest-skill?cacheSeconds=300)](https://github.com/RogerioSobrinho/world-cup-digest-skill/releases)
+[![Release](https://img.shields.io/badge/release-v0.5.1-blue)](https://github.com/RogerioSobrinho/world-cup-digest-skill/releases/tag/v0.5.1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Manual AI-agent skill for following the FIFA World Cup when you cannot watch every match.
