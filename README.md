@@ -1,5 +1,7 @@
 # World Cup Digest Skill
 
+[![CI](https://github.com/RogerioSobrinho/world-cup-digest-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/RogerioSobrinho/world-cup-digest-skill/actions/workflows/ci.yml)
+
 Manual AI-agent skill for following the FIFA World Cup when you cannot watch every match.
 
 It helps an agent produce concise, sourced summaries for:
