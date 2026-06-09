@@ -1,6 +1,8 @@
 # World Cup Digest Skill
 
 [![CI](https://github.com/RogerioSobrinho/world-cup-digest-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/RogerioSobrinho/world-cup-digest-skill/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/RogerioSobrinho/world-cup-digest-skill)](https://github.com/RogerioSobrinho/world-cup-digest-skill/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Manual AI-agent skill for following the FIFA World Cup when you cannot watch every match.
 
@@ -19,6 +21,10 @@ It helps an agent produce concise, sourced summaries for:
 The skill includes a bundled fetcher script, similar in spirit to `last30days` using its own Python engine. The script gathers a research bundle from public sources and optional football data providers, then the agent verifies and synthesizes the final recap.
 
 The default mode is free/public-source oriented. Paid sports-data APIs are optional.
+
+![Real Codex terminal run using world-cup-digest](assets/demo.gif)
+
+Demo captured from a real `codex exec` run using the bundled Brazil vs Serbia 2022 mock fixture. The terminal output is shortened only to fit the GIF.
 
 ## Who this is for
 
