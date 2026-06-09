@@ -20,6 +20,21 @@ The skill includes a bundled fetcher script, similar in spirit to `last30days` u
 
 The default mode is free/public-source oriented. Paid sports-data APIs are optional.
 
+## Who this is for
+
+This is for people who cannot watch every World Cup match but still want to stay current with what mattered.
+
+It is especially useful if you want:
+
+- quick daily catch-ups
+- match summaries without watching every highlight video
+- radar updates for a specific national team
+- replay/highlight priorities
+- group and bracket implications
+- public-source-first research without paying for a sports-data API
+
+It is not meant to replace a premium live-stat feed for xG, shot maps, player ratings, or guaranteed minute-by-minute structured data.
+
 ## Install
 
 ### Codex, Cursor, Copilot, Gemini CLI, Claude Code, and other Agent Skills hosts
