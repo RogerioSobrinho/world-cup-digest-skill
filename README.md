@@ -4,7 +4,9 @@
 [![Release](https://img.shields.io/badge/release-v0.5.1-blue)](https://github.com/RogerioSobrinho/world-cup-digest-skill/releases/tag/v0.5.1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Manual AI-agent skill for following the FIFA World Cup when you cannot watch every match.
+Follow the World Cup without watching every match.
+
+World Cup Digest gives your AI agent sourced match recaps, daily digests, team radar, and replay priorities so you can stay current without hunting through highlight videos and match reports.
 
 It helps an agent produce concise, sourced summaries for:
 
@@ -25,6 +27,12 @@ The default mode is free/public-source oriented. Paid sports-data APIs are optio
 ![Real Codex terminal run using world-cup-digest](assets/demo.gif)
 
 Demo captured from a real `codex exec` run using the bundled Brazil vs Serbia 2022 mock fixture. The terminal output is shortened only to fit the GIF.
+
+Try the demo prompt:
+
+```text
+Use world-cup-digest: I missed Brazil vs Serbia in the 2022 World Cup. Give me a concise catch-up with score, key player, why it mattered, and whether highlights are enough.
+```
 
 ## Who this is for
 
